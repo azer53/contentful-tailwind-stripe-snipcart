@@ -1,13 +1,10 @@
-import React, { useRef } from "react"
+import React from "react"
 import Logo from "../images/example-logo.svg"
 import { Link } from "gatsby"
 import { bool, func } from "prop-types"
 import MobileNavigation from "./MobileNavigation"
-import { useOnClickOutside } from "./hooks"
 
 const Navigation = ({ open, setOpen }) => {
-  const node = useRef()
-  useOnClickOutside(node, () => setOpen(false))
   return (
     <div id="nav" className="bg-white shadow">
       <div className="md:px-8">
@@ -79,9 +76,7 @@ const Navigation = ({ open, setOpen }) => {
           </div>
         </nav>
       </div>
-      <div ref={node} id="mobile-navigation">
-        <MobileNavigation open={open} setOpen={setOpen} />
-      </div>
+      <MobileNavigation open={open} setOpen={setOpen} />
     </div>
   )
 }
