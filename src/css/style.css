@@ -2,7 +2,6 @@
 
 body {
   @apply antialiased font-sans bg-gray-200;
-  overflow: hidden;
 }
 @tailwind components;
 

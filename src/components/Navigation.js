@@ -40,18 +40,7 @@ const Navigation = ({ open, setOpen }) => {
               >
                 Products
               </Link>
-              <Link
-                to="/"
-                className="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"
-              >
-                Marketplace
-              </Link>
-              <Link
-                to="/"
-                className="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"
-              >
-                Partners
-              </Link>
+
               <Link
                 to="/"
                 className="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"

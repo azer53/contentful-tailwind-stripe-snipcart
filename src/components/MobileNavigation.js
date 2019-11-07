@@ -70,18 +70,6 @@ const MobileNavigation = ({ open, setOpen }) => {
                 <div className="border-t-2 border-gray-200 px-4 pt-6">
                   <Link
                     to="/"
-                    className="block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Marketplace
-                  </Link>
-                  <Link
-                    to="/"
-                    className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Partners
-                  </Link>
-                  <Link
-                    to="/"
                     className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
                   >
                     About
