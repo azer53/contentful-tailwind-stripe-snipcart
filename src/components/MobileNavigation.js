@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { bool, func } from "prop-types"
+import Logo from "../images/example-logo.svg"
 
 const MobileNavigation = ({ open, setOpen }) => {
   return (
@@ -34,7 +35,7 @@ const MobileNavigation = ({ open, setOpen }) => {
                   </button>
                 </div>
                 <div className="px-4 pt-4 pb-6">
-                  <img src="/img/example-logo.svg" alt="" className="h-8 w-8" />
+                  <img src={Logo} alt="" className="h-8 w-8" />
                   <Link
                     to="/"
                     className="mt-8 block text-xs font-semibold text-gray-600 uppercase tracking-wider"
