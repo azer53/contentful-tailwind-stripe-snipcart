@@ -3,10 +3,11 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Paper from "../images/paper.jpg"
+import { graphql } from "gatsby"
 
 //import SEO from "../components/seo"
 
-const ProductPage = (title, description, price) => (
+const ProductPageTemplate = ({ data }) => (
   <Layout>
     <div className="container mx-auto max-w-6xl">
       <section class="py-12 px-4">
@@ -57,4 +58,13 @@ const ProductPage = (title, description, price) => (
   </Layout>
 )
 
-export default ProductPage
+export default ProductPageTemplate
+
+export const query = graphql`
+  query($slug: String!) {
+    contentfulProduct(slug: { eq: $slug }) {
+      title
+      slug
+    }
+  }
+`
