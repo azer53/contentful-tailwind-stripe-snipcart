@@ -8,8 +8,8 @@ import Sample from "../images/work.jpg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section class="container mx-auto py-8">
-      <img class="rounded shadow-md" src={Sample} alt="" />
+    <section className="container mx-auto py-8">
+      <img className="rounded shadow-md" src={Sample} alt="" />
     </section>
     <div className="max-w-6xl mx-auto">
       <HighlightedProducts />
