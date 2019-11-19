@@ -9,6 +9,7 @@ import { graphql } from "gatsby"
 
 const ProductPageTemplate = ({ data }) => {
   const product = data.contentfulProduct
+  const productUrl = "products/" + product.slug
   return (
     <Layout>
       <div className="container mx-auto max-w-6xl">
@@ -47,7 +48,7 @@ const ProductPageTemplate = ({ data }) => {
                       className="inline-block w-full py-3 px-4 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded md:rounded-l-none snipcart-add-item"
                       data-item-id={product.slug}
                       data-item-price={product.price}
-                      data-item-url={window.location.pathname}
+                      data-item-url={productUrl}
                       data-item-description={product.description.description}
                       data-item-image={Paper}
                       data-item-name={product.title}
