@@ -42,30 +42,10 @@ const MobileNavigation = ({ open, setOpen }) => {
                   >
                     Products
                   </Link>
-                  <Link
-                    to="/"
-                    className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Checkout
-                  </Link>
-                  <Link
-                    to="/"
-                    className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Payments
-                  </Link>
-                  <Link
-                    to="/"
-                    className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Billing
-                  </Link>
-                  <Link
-                    to="/"
-                    className="mt-4 block font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Insights
-                  </Link>
+
+                  <button className="mt-4 block font-medium text-gray-900 hover:text-gray-700 snipcart-checkout">
+                    Cart
+                  </button>
                 </div>
                 <div className="border-t-2 border-gray-200 px-4 pt-6">
                   <Link

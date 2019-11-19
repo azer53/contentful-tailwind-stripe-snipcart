@@ -7,25 +7,29 @@
 
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-//import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Navigation from "./Navigation"
 import "../css/style.css"
 
 const Layout = ({ children }) => {
-  /* const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `) */
   const [open, setOpen] = useState(false)
 
   return (
     <div className="bg-gray-200" style={{ minHeight: `640px` }}>
+      <Helmet>
+        <script src="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css"
+        />
+      </Helmet>
+      <div
+        hidden
+        id="snipcart"
+        data-api-key="ODg0NTFhZTEtZThkMy00OWJlLWIwZmEtOTVhZDk0MjYzMjljNjM3MDIwNTgxMjc3Njg5NjA0
+"
+      ></div>
       <Navigation open={open} setOpen={setOpen} />
       <div>
         <main>{children}</main>

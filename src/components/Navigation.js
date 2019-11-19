@@ -40,6 +40,9 @@ const Navigation = ({ open, setOpen }) => {
               >
                 Products
               </Link>
+              <button className="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700 snipcart-checkout">
+                Cart
+              </button>
 
               <Link
                 to="/"

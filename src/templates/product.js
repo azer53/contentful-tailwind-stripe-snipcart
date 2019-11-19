@@ -43,7 +43,15 @@ const ProductPageTemplate = ({ data }) => {
                     />
                   </div>
                   <div className="w-1/2">
-                    <button className="inline-block w-full py-3 px-4 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded md:rounded-l-none">
+                    <button
+                      className="inline-block w-full py-3 px-4 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded md:rounded-l-none snipcart-add-item"
+                      data-item-id={product.slug}
+                      data-item-price={product.price}
+                      data-item-url={window.location.pathname}
+                      data-item-description={product.description.description}
+                      data-item-image={Paper}
+                      data-item-name={product.title}
+                    >
                       Buy
                     </button>
                   </div>
